@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero {
+  width: 80%;
+  margin: auto;
+}
+
+nav {
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  flex: 1;
+  text-align: right;
+}
+
+ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 1.5rem;
+}
+
+ul li a {
+  position: relative;
+  padding: 0 0.8rem;
+  text-decoration: none;
+  color: #000;
+}
+
+ul li a::after {
+  position: absolute;
+  top: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  width: 0;
+  height: 0.7rem;
+  background: #f14a60;
+  transition: 0.3s;
+}
+
+ul li a:hover::after {
+  width: 100%;
+}
+
+.nav-icons {
+  margin-left: 2rem;
+}
+
+.nav-icons img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.banner {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.banner .left-column,
+.banner .right-column {
+  flex-basis: 50%;
+}
+
+.banner .right-column img {
+  width: 100%;
+}
+
+.banner .left-column .search-box {
+  display: flex;
+  width: 50%;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+  margin: 0.6rem 0 2rem;
+}
+
+.banner .left-column .search-box img {
+  height: 1.2rem;
+  width: 1.2rem;
+  cursor: pointer;
+}
+
+.banner .left-column .search-box input {
+  width: 100%;
+  margin-left: 1rem;
+  font-size: 1.1rem;
+  border: 0;
+  outline: none;
+}
+
+.banner .left-column h1 {
+  font-size: 4rem;
+}
+
+.banner .left-column h4 {
+  font-size: 2rem;
+}
+
+.banner .left-column span {
+  color: #f14a60;
+}
+
+.left-column p {
+  margin: 3rem 0;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.btn {
+  margin-bottom: 3.2rem;
+}
+
+.btn button {
+  padding: 0.7rem 1.9rem;
+  margin-right: 1rem;
+  outline: none;
+  border: 1px solid #fb7381;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: #fb7381;
+  background: transparent;
+  transition: 0.2s;
+}
+
+.btn button:hover {
+  transform: scale(1.1);
+}
+
+.btn .btn-primary {
+  background: linear-gradient(#fb7381, #f14a60);
+  box-shadow: 0 2px 15px rgba(248, 38, 103, 0.26);
+  color: #fff;
+}
+
+.social-icons {
+  position: relative;
+  width: 200px;
+  margin-left: 160px;
+  text-align: center;
+  opacity: 0.4;
+}
+
+.social-icons img {
+  height: 1.1rem;
+  margin: 0 14px;
+}
+
+.social-icons::after {
+  position: absolute;
+  top: 0.7rem;
+  left: -160px;
+  content: "";
+  width: 150px;
+  height: 1px;
+  background: #000;
+}
